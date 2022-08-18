@@ -48,7 +48,7 @@ header .logo{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color: blueviolet;
+    color: rgba(68, 36, 154, 0.765);
     font-size: 1.6em;
 }
 
@@ -99,92 +99,44 @@ header a:hover{
 
 
 
-
+/*inicio  del carrusel */
    
+    .carrucel {
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+
 
    .carrucel-items{
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0px;
    }
    
    .carrucel-item{
-    height: 100px;}
+    min-width: 165px;
+    max-width: 165px;
+    height: 120px;
+    outline: 1px solid black;
+    cursor: context-menu;
+}
 
 
     .carrucel-item img{
-        width: 110px;
-        height: 90px;
+        width: 85%;
+        height: 98%;
+        counter-reset: none;
         object-fit: cover;
+        transition: 0.3s;
     }
 
-    .carrusel-items {
-        display: flex;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        padding: 30px 0px;
-      }
-      
-      .carrusel-item {
-        min-width: 300px;
-        max-width: 300px;
-        height: 200px;
-        outline: 2px solid black;
-        cursor: pointer;
-      }
-      
-      .carrusel-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-        .carrusel-items {
-        display: flex;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        padding: 30px 0px;
-        }
-
-        .carrusel-item {
-        min-width: 300px;
-        max-width: 300px;
-        height: 200px;
-        outline: 2px solid black;
-        cursor: pointer;
-        }
-
-        .carrusel-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        } 
-        .carrusel-items {
-            display: flex;
-            overflow-x: hidden;
-            overflow-y: hidden;
-            padding: 30px 0px;
-          }
-          
-          .carrusel-item {
-            min-width: 300px;
-            max-width: 300px;
-            height: 200px;
-            outline: 2px solid black;
-            cursor: pointer;
-          }
-          
-          .carrusel-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+    .carrucel-item:hover{
+        transform: scale(1.1);}
 
 
-            .carrusel-item:hover {
-            transform: scale(1.2);
-            }
-
-
+/*fin del carrusel */
 
     #Hero h1{
         color: white;
@@ -227,7 +179,8 @@ header a:hover{
     }
 
     #Mis-proyectos h2{
-        margin-top: 0px;
+        margin-top:10px;
+        padding-top: 20px;
         font-size: 3.2em;
         color: white;
     }
@@ -242,8 +195,8 @@ header a:hover{
         width: auto;
         background-position: center center;
         background-size: cover;
-        padding: 50px 0px;
-        margin: 30px;
+        padding: 50px 0;
+        margin: 10px 20px 50px;
         border-radius: 15px;
     }
 
@@ -292,7 +245,7 @@ header a:hover{
     }
     
     footer .container{
-        height: 150px;
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -434,5 +387,10 @@ header a:hover{
         #caracteristicas{
             background-position-x: calc(100vw - 800px);
         }
+
+    
         
     }
+
+
+   
