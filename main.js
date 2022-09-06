@@ -1,29 +1,21 @@
-const carrusel = document.querySelector(".carrusel-items");
+const carrucel = document.querySelector(".carrucel-items");
 
-let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
-let intervalo = null;
-let step = 1;
-const start = () => {
-  intervalo = setInterval(function () {
-    carrusel.scrollLeft = carrusel.scrollLeft + step;
-    if (carrusel.scrollLeft === maxScrollLeft) {
+let maxScrollLeft = carrucel.scrollWidth - carrucel.clientWidth;
+
+let intervalo=null;
+
+let step =1;
+
+const start =() =>{
+  intervalo = setInterval(function(){
+    carrucel.scrollLeft=carrucel.scrollLeft + step;
+    if(carrucel.scrollLeft === maxScrollLeft){
       step = step * -1;
-    } else if (carrusel.scrollLeft === 0) {
-      step = step * -1;
-    }
+    }else if(carrucel.scrollLeft === 0){
+    step = step * -1;}
   }, 10);
 };
 
-const stop = () => {
-  clearInterval(intervalo);
-};
-
-carrusel.addEventListener("mouseover", () => {
-  stop();
-});
-
-carrusel.addEventListener("mouseout", () => {
-  start();
-});
+const stop = ()=>{};
 
 start();
