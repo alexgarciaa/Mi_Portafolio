@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio-Alex</title>
     <link rel="stylesheet" href="./Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;1,100;1,200&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>               
+    <script type="text/javascript"> emailjs.init('opiB13vNp-6mh0seW') </script>
 
 </head>
 
@@ -13,20 +18,46 @@
 <body>
     <header>
         <div class="comtainer">
-            <p class="logo">APASIONADO POR LA TECNOLOGÍA</p>
+          
             <nav>
-                <a href="#Hero">Principal</a>
-                <a href="#Acerca-de-mi">Acerca de mi</a>
-                <a href="#Mis-proyectos">Mis proyectos</a>
-                <a href="https://wa.me/51939069645" target="_blank" rel="noopener noreferrer">Contacto telefónico</a>
+                <div class="one">
+                <a href="#Hero" style="float:left;">Principal</a>
+                </div>
+
+                <div class="two">
+                <a href="#Acerca-de-mi">Acerca de mí</a>
+                <a href="#Mis-proyectos">Mis Proyectos</a>
+                <a href="#id_hoja5" >Contacto</a>
+                </div>
             </nav>
 
         </div>
     </header>
 
 <section id="Hero">
-    <h1>Alex Enmanuel Garcia Acha</h1>
-    <button><a href="mailto:aegarciaa@unac.edu.pe?" target="_blank" rel="noopener noreferrer">Contáctame</a></button>
+    <div class="contenedor1">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./img/Bussines.Expon.mp4">
+        </video>
+    </div>
+    <div class="contenedor2">
+        <h1>Data Analytics - Business Intelligence</h1>
+        <div class="profile-icons">
+            <a href="#">
+            <button class="ab">
+                <img src="./img/github.svg" alt="Icono A">
+            </button>
+            </a>
+
+            <a href="https://www.linkedin.com/in/alex-enmanuel-garcia-acha-22aa9324a/" target="_blank">
+             <button class="ac">
+                 <img src="./img/linkedin.svg" alt="Icono B">
+             </button>
+            </a>
+        </div>
+    </div> 
+    
+    
 </section>
 
 <section id="Acerca-de-mi">
@@ -39,12 +70,13 @@
 
 
         <div class="texto">
-            <h2>Alex Garcia Acha</h2>  
+            <h2>Conóceme un poco más</h2>  
             <p>
-             Actualmente estoy en el ultimo año de la carrera de Ingenieria de Sistemas en la Universidad Nacional del Callao. <br>
-             Me considero una persona apasionada por la tecnología, autodidacta y con aptitudes para poner en práctica lo aprendido.
-             Por lo que ha llegado el momento de hacer uso de mis conocimientos y habilidades contribuyan con los objetivos
-             de la empresa y permitan desarrollarme en la industria tecnológica.
+                ¡Hola! Mi nombre Alex Garcia, egresado de la carrera de Ingeniería de Sistemas y me encanta el mundo del análisis de datos y business intelligence. Disfruto trabajando con datos y convirtiéndolos en información valiosa que pueda ser utilizada para la mejora de procesos y toma de decisiones estratégicas. <br><br>
+
+                Me caracterizo por ser un profesional proactivo e investigador con constantes ganas de seguir aprendiendo. Adicionalmete, tengo experiencias laborales que validan mis conocimientos y vengo realizando proyectos de interés.<br><br>
+            
+                Si estas buscando un profesional proactivo orientado al análisis de datos y business inteligence puedes contactarme.
             </p>
         </div>
     </div>
@@ -127,22 +159,47 @@
 </section> 
 
 <section id="Mis-proyectos">
-        <div class="container">
-            <h2>Mis proyectos</h2>
+        <div class="container" id="#ct2">
+            <h2>Proyectos de Data Analytics y Business Intelligence</h2>
+            <div class="programas" id="CARTA10">
+                <div class="carta">
+                    <h4>Análisis de ventas <br> (Power BI - Excel)</h4>
+                   <!--- <p>Usando el lenguaje de programacion Java y MySQL, se desarrollo un sistema de venta para una pollería</p>-->
+                    <button  ><a href="https://github.com/alexgarciaa/Caso-PowerBI-1/blob/main/hello.md" target="_blank" rel="noopener noreferrer">Git Hub</a></button>
+                   
+                </div>
+                <div class="carta">
+                    <h4>Análisis de ventas <br>(Power BI -SQL Server)</h4>
+                    <!---<p>Desarrallado en la plataforma Android Studio y con el lenguaje Java, se desarrollo un aplicativo movil</p>-->
+                    <button  ><a href="https://github.com/alexgarciaa/De_SqlServer_a_PoweBi/blob/main/PoweBI_Sql.md" target="_blank" rel="noopener noreferrer" >Git Hub</a></button>
+                </div>
+                <div class="carta">
+                    <h4>Proyecciones de Ventas <br> (Python-Pandas_Matplotlib_Numpy)</h4>
+                    <!---<p>Haciendo uso de tecnologias Web, como HTML, CSS , JAVASCRIPT, GIT, ETC. Se desarrollo este aplicativo web </p>-->
+                    <button  ><a href="https://github.com/alexgarciaa/Proyecciones-con-Python" target="_blank" rel="noopener noreferrer">Git Hub</a></button>
+                </div>  
+            </div>
+
+        </div>
+
+
+
+        <div class="container" id="#ct3">
+            <h2 class="ti">Proyectos de programación</h2>
             <div class="programas">
                 <div class="carta">
-                    <h3>Sistema de Venta <br> (Aplicacion de Escritorio)</h3>
+                    <h4>Sistema de Venta <br> (Aplicacion de Escritorio)</h4>
                    <!--- <p>Usando el lenguaje de programacion Java y MySQL, se desarrollo un sistema de venta para una pollería</p>-->
                     <button  ><a href="https://github.com/alexgarciaa/Sistema_de_Venta_Polleria" target="_blank" rel="noopener noreferrer">Git Hub</a></button>
                    
                 </div>
                 <div class="carta">
-                    <h3>Aplicacion de Baby Shower <br>(Aplicacion movil)</h3>
+                    <h4>Aplicacion de Baby Shower <br>(Aplicacion movil)</h4>
                     <!---<p>Desarrallado en la plataforma Android Studio y con el lenguaje Java, se desarrollo un aplicativo movil</p>-->
                     <button  ><a href="https://github.com/alexgarciaa/Aplicacion_de_BabyShower_Andorid" target="_blank" rel="noopener noreferrer">Git Hub</a></button>
                 </div>
                 <div class="carta">
-                    <h3>Sistema de venta <br> (Aplicacion WEB)</h3>
+                    <h4>Sistema de venta <br> (Aplicacion WEB)</h4>
                     <!---<p>Haciendo uso de tecnologias Web, como HTML, CSS , JAVASCRIPT, GIT, ETC. Se desarrollo este aplicativo web </p>-->
                     <button  ><a href="https://github.com/alexgarciaa/Sistema_de_venta_e_inventario_web" target="_blank" rel="noopener noreferrer">Git Hub</a></button>
                 </div>  
@@ -158,13 +215,102 @@
         </div>
 
 
-    <footer>
-            <div class="container">
-                <p>&copy; Derechos Reservados </p>
+
+
+
+
+
+</section>
+
+<div class="hoja5" id="id_hoja5">
+    <div class="contenerdor10">
+
+
+        
+        <div class="cont_izq">
+            <h3>Como puedes contactarme</h3>
+
+            <div class="Ico_contact">
+
+                    <a href="https://wa.me/51939069645" target="_blank">
+                        <button class="ico_21">
+                            <img src="./img/whatsapp-removebg-preview.png" alt="IC_W" height="50px" width="auto">
+                            <p class="name">+51 939069645</p>
+                        </button>
+                        
+                    </a>
+
+                    <a href="mailto:alex34enmanuel@gmail.com" target="_blank">
+                        <button class="ico_22">
+                            <img src="./img/correo-electronico-removebg-preview.png" alt="IC_C" height="50px" width="auto"> 
+                            <p class="name">alex34enmanuel@gmail.com</p>
+                        </button>
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <button class="ico_23">
+                            <img src="./img/ubi.png" alt="IC_D" height="50px" width="auto"> 
+                            <p class="name">Lima-Perú</p>
+                        </button>
+                    </a>
+
             </div>
-     </footer>
- 
-</section> 
+
+            <div class="Ico_descarga">
+                <a href="./CV_2023_AlexGarciapdf.pdf" download target="_blank">
+                    <button class="ico_dow">Descarga mi CV</button>
+                  </a>
+            </div>
+
+        </div>
+
+
+
+        <div class="cont_der">
+
+            <h3>Envíame un mensaje desde aquí</h3>
+
+
+            <form id="form">
+                <div class="field">
+                  <label for="from_name" >Nombre: </label>
+                  <input type="text" name="from_name" id="from_name" >
+                </div>
+                <div class="field">
+                    <label for="reply_to">Correo</label>
+                    <input type="text" name="reply_to" id="reply_to">
+                  </div>
+                <div class="field" >
+                  <label for="message">Mensaje</label>
+                  <input type="text" name="message" id="message" class="wrap">
+                </div>
+
+
+                
+              
+                <input type="submit" id="button" value="Enviar Mensaje" >
+            </form>
+              
+              
+         
+        </div>
+
+
+    </div>
+    <div class="cont_footer">
+        <span>
+            Todos los derechos reservados © - Lima, Marzo del 2023.
+        </span>
+
+    </div>
+
+
+    
+
+</div>
+
+<script src="./sc.js"></script>
+
 </body>
 
 </html>

@@ -9,36 +9,33 @@ body{
 }
 
 header {
-    background-color: #f1f1f1;
+    background-color: black;
     padding: 20px;
     text-align: center;
     justify-content: space-between;}
 
-h1{font-size: 2.0em;}
-
-h2{font-size:1.75em;}
-
-h3{font-size:1.5em;}
-
-p{ font-size: 1.25em;}
-
-a{text-decoration: none;
-  color: #000;}
 
   button{
-    font-size: 1.25em;
     font-weight: bold;
-    padding: 10px 30px;
     border-radius: 5px;
     border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: rgb(34, 92, 174);
+    
+}
+
+.carta button a{
+    text-decoration: none;
+    color: black;
+}
+
+.ella button a{
+    text-decoration: none;
+    color: black;
 }
 
 
 button:hover{
-    background-color: rgb(27, 39, 166);
+    background-color: rgb(97, 106, 206);
 }
 
 .container{
@@ -53,6 +50,10 @@ header .logo{
     font-size: 1.6em;
 }
 
+
+
+
+
 header .container{
     display: flex;
     flex-direction: column;
@@ -63,13 +64,16 @@ header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
 }
 
 header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: antiquewhite;
 }
 
 header a:hover{
@@ -80,39 +84,64 @@ header a:hover{
     padding: 10px;
     background-image: url("");
     background-size: cover;
-    height: 80vh;}
-    #Hero{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        height: 75vh;
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("img/codigo.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+    height: 100vh;}
+
+
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+   .back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  
+
+   }
+
+   @media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
     }
+   }
+
+   @media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+   }
 
 
 
     #Hero h1{
 
-        color: white;
+        font-size: 0.5em;
+        color: rgba(10, 31, 57, 0.895);
 
     }
     
 
 
     #Hero button{
-        font-size: 1.75em;
+     
+        font-size: 1.25em;
+        position: relative;
+       
     }
     
+    #Acerca-de-mi{
+        background-image: url(./img/fd_3.jpg);
+        background-size: cover;
+        
+        width: 100%;
+    }
+
     #Acerca-de-mi .container{
         display: flex;
         flex-direction: column;
@@ -120,7 +149,7 @@ header a:hover{
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        margin: 0;
+        margin-top: 50PX;
     }
 
 /*miraaaa*/
@@ -130,8 +159,10 @@ header a:hover{
     text-align: center;
 }
 
-.ella{
- padding-bottom: 60px;
+.ella button{
+ background-color: rgba(104, 202, 229, 0.445);
+ margin-top: 10px;
+ padding: 8px 8px;
 }
     
 
@@ -145,11 +176,11 @@ header a:hover{
   }
   
   .carrucel-items {
-    background-color: rgba(85, 119, 161, 0.694);
+    background:rgb(213, 212, 212);
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding: 30px 0px;
+    padding: 25px 0px;
   }
   
   .carrucel-item {
@@ -181,19 +212,35 @@ header a:hover{
         color: white;
         padding: 0 10px;
         background-color: rgba(11, 5, 5, 0.923);
+        height: 100vh;
     
     }
 
+   
+
+    #ct2{
+        margin: 110px 0 0 0;
+    }
+
+    
+
     #Mis-proyectos .container{
-        padding: 0 20px;
+        padding: 0 10px;
+        
 
     }
 
     #Mis-proyectos h2{
-        margin-top:10px;
-        padding-top: 20px;
-        font-size: 3.2em;
+        margin: 0;
+        padding: 40px 0 15px 0 ;
+        font-size: 1em;
         color: white;
+    }
+
+    #Mis-proyectos .ti{
+         
+        padding: 40px 0 0 0 ;
+        
     }
 
   
@@ -206,10 +253,72 @@ header a:hover{
         width: auto;
         background-position: center center;
         background-size: cover;
-        padding: 50px 0;
-        margin: 10px 20px 50px;
+        margin: 10px 20px 10px;
         border-radius: 15px;
     }
+
+
+
+
+
+
+    #CARTA10 .carta:first-child{
+        width: auto;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("./img/DASHBOARD_EXCEL.PNG");
+       
+    
+    }
+
+    #CARTA10 .carta:nth-child(2){
+        width: auto;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("./img/DASHBOARD_SQL.PNG");
+    }
+    
+    #CARTA10 .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("./img/PROYEC.PNG");
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .carta:first-child{
         width: auto;
@@ -252,7 +361,7 @@ header a:hover{
     
     footer p{
         margin: 0;
-        padding: 12px;
+        padding: 10px;
         color: rgb(100,100,100);
     }
     
@@ -268,10 +377,34 @@ header a:hover{
 
 
     @media  (min-width: 850px){
+        .comtainer .logo{
+            padding: 15px;
+           
+        }
+
         header{
             position: fixed;
             width: 100%;
+            padding: 0;
         }
+
+        
+         
+          
+        #container-principal {
+            padding-top: 70px;} /* Altura del nav */
+
+        .contenedor2 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+            margin-top: 120px; /* Altura del nav */
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+         
+          }
     
         header .container{
             flex-direction: row;
@@ -280,15 +413,18 @@ header a:hover{
     
         header nav{
             flex-direction: row;
-            padding-bottom: 0;
-            padding-right: 20px;
+            margin: 20px 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
         }
         #Hero h1{
-            font-size: 5em;
+      
+            font-size: 3em;
         }
     
         #Acerca-de-mi h2{
             margin-top: 0px;
+            color:  rgba(10, 31, 57, 0.895);
         }
     
 
@@ -298,6 +434,8 @@ header a:hover{
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-evenly;
+            padding-top: 90px;
+            
         }
 
         #Acerca-de-mi .texto{
@@ -308,28 +446,68 @@ header a:hover{
             flex-direction: column;
             justify-content: center;
         }
+
+        #Acerca-de-mi .texto p{
+            font-size: medium;
+            color: black;
+            font-weight: 600;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           
+        }
+
         #Acerca-de-mi .img-container{
             background-image: url("img/yoopi.jpg");
             background-size: cover;
             background-position: center center;
             margin: 30px 0 ;
-            height: 350px;
             width: 220px; 
-            border-radius: 15px;
+            height: 280px;
+            border-radius: 5px;
+            
         }
+
+        .container .img-container {
+            max-width: 250px;
+            height: auto;
+            object-fit: cover;
+            
+          }
+
+          .img-container {
+            display: flex;
+            justify-content: center;
+            
+          }
+          
+          .img-container img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+          }
+
 
         #Mis-proyectos .programas{
             display: flex;
             justify-content: center;
+            height: 200px;
+            margin: 0;
+            padding: 0;
         }
     
         #Mis-proyectos p{
             display: block;
             margin-bottom: 30px;
         }
+
+        #Mis-proyectos{
+            padding-top: 40px;
+            
+        }
     
         #Mis-proyectos h2{
-            font-size: 4em;
+            font-size: 2em;
+            color:  rgba(102, 141, 187, 0.895);
+          
         }
     
         #Mis-proyectos h3{
@@ -338,66 +516,288 @@ header a:hover{
         #Mis-proyectos .carta{
           width: 33.33%;
         }
-    
-    }
 
-    
-        /*
-        #Mis-proyectos .carta{
-            padding: 50px;
-            background-size: 100% 150px;
-            background-repeat: no-repeat;
-            background-position-y: 0;
-            background-color: rgba(50, 50, 50, 1);
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-        }
-    
-        .carta:first-child{
-            background-image: linear-gradient(
-                0deg,
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            )
-            ,url("media/Pollo.jpg");
-    
-        }
-    
-        .carta:nth-child(2){
-            background-image: linear-gradient(
-                0deg,
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            )
-            ,url("media/babyshowerjpg.jpg");
-        }
-    
-        .carta:nth-child(3){
-            background-image: linear-gradient(
-                0deg,
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            )
-            ,url("media/Ferretería.jpg");
-    
-        }
-    *
+        #Mis-proyectos #CARTA10 .carta{
+            width: 33.33%;
+          }
 
-    }
-    /*
-    @media (min-width: 1000px) {
-      #Acerca-de-mi{
-        margin: 0;
-      }
 
-      #Acerca-de-mi .texto{
-        color:rgb(14, 47, 47);
-      }
- 
+        .hoja5 {
+            width: 100%;
+            height:700px;
+            background-image: url(./img/fd_3.jpg);
+            background-size: cover;
+            
+            
+          }
+          
+          .contenerdor10{
+            height: 620px;
+            width: 100%;
+          }
+          
       
+           
+          #id_hoja5 .contenerdor10 {
+              display: flex;
+              align-content: flex-end;
+              justify-content: flex-end;
+              align-items: flex-end;
+          }
+          
+          #id_hoja5 .contenerdor10 > div {
+            display: inline-block;
+            vertical-align: top;
+            background: border-box;
+          
+          }
+          
+          .cont_izq{
+            height: 90%;
+            padding-top: 20px;
+            background-color: rgba(85, 119, 161, 0.694);
+            background-size: cover;
+           
+          }
+          
+          .cont_der{
+            height: 90%;
+            padding-top: 20px;
+            background-color: rgba(85, 119, 161, 0.694);
+            border-left: 1px solid black;
+          }
+          
+          .Ico_descarga {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            height: 100px;
+            display: flex;
+            align-items: center;
+          }
+          
+          .cont_izq .Ico_contact{
+            display: flex;
+            flex-direction: column;
+            
+          }
+          
+          
+          #id_hoja5 .contenerdor10 {
+          
+            display: flex;
+            
+          }
+          
+          #id_hoja5 .contenerdor10 > div {
+            width: 50%;
+          }
+          
+          .cont_izq h3{
+            display: flex;
+            margin-top: 60px;
+            justify-content: center;
+          
+          }
+          
+          
+          .Ico_contact button {
+            display: flex;
+            align-items: center;
+            
+          }
+          
+           a {
+            text-decoration: none;
+          }
+          
+          
+          
+          
+          .Ico_contact .name {
+            margin-left: 10px;
+          }
+          
+          
+          .hoja5 .ico_dow{ 
+            background-color: rgba(10, 31, 57, 0.895); /* Color de fondo del botón */
+            border: none; /* Quita el borde del botón */
+            color: white; /* Color del texto del botón */
+            padding: 10px 20px; /* Espacio alrededor del texto */
+            text-align: center; /* Centra el texto en el botón */
+            text-decoration: none; /* Quita el subrayado del texto */
+            display: inline-block; /* Hace que el botón sea un bloque en línea */
+            font-size: 16px; /* Tamaño de fuente del texto */
+            cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+            border-radius: 5px; /* Agrega bordes redondeados al botón */
+          }
+          
+          
+          .cont_footer{
+          height: 80px;  
+          width: 100%;
+          background-color: black;
+          
+          }
+          
+          .ico_21, .ico_22, .ico_23{
+          
+            margin-top: 20px ;
+            margin-left: 30px; 
+            border: none;
+            background-color: rgba(245, 245, 245, 0.738);
+            
+          }
+          
+          .ico_dow{
+            display: flex;
+            align-items: end;
+            margin-left: 30px;
+          
+          }
+          
+          
+          
+          
+          
+          
+          .cont_der {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 40px 0;
+            border-left-color: #1e1e1e;
+          }
+          
+          h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+          }
+          
+          
+          #form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+             
+             
+          }
+          
+          .field {
+            margin-bottom: 10px;
+          }
+          
+          .field label {
+            display: block;
+            font-size: 15px;
+            color: #121212fd;
+            font-weight: bold;
+            
+          }
+          
+          .field input {
+            display: block;
+            min-width: 350px;
+            border-radius: 5px;
+            font-size: 20px;
+          
+          
+          }
+          
+          input[type="submit"] {
+            display: block;
+            padding: 10px 30px;
+            font-size: 16px;
+            background-color: rgba(10, 31, 57, 0.895);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 25px;
+          
+          }
+          
+          
+          
+          #message{
+          height: 80px;
+          }
+          
+          .cont_footer span{
+            display: flex;
+            justify-content: center;
+            padding-top: 25px;
+            color: antiquewhite;
+            font-size: medium;
+          }
+          
+          .hoja5 h3{
+            padding-top: 40px;
+          }
+          
+          
+          
+          .field input .wrap{
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+          }
+           
+          #message {
+            height: 80px; /* Establece la altura máxima de la caja de entrada */
+            overflow-y: auto; /* Añade una barra de desplazamiento vertical si el contenido supera la altura máxima */
+          }
+
+
+                    
+            .profile-icons {
+                margin-top: 50px;
+                width: 200px;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .profile-icons img {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .ab,
+            .ac {
+                border: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .one {
+    float: left;
+  }
+  
+  nav .two {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav a {
+    margin-left: 20px;
+  }
+  
+  nav a:hover {
+    background-color:rgba(52, 53, 54, 0.895);
+  }
      
     
-      
     }
-  */
 
+    
    
